@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">CarWash</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="UserName">UserName</string>
+    <string name="Email">Email</string>
+    <string name="Phone">Phone Number</string>
+    <string name="Password">Password</string>
+    <string name="submit">Submit</string>
+    <string name="SignIn">Sign In</string>
+    <string name="not_a_member">Not a member ?</string>
+    <string name="already_member">Already a member?</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="access_location">Access Location</string>
+    <string name="car_wash_app_requires_access_to_your_location">Car Wash App requires access to your location</string>
+    <string name="turn_on_location_service">Turn on location service</string>
+    <string name="save_location">Save Location</string>
+    <string name="save_selection">Save Selection</string>
+    <string name="select_car">Select Car</string>
+    <string name="select_service">Select Service</string>
+    <string name="save">Save</string>
+    <string name="confirm_booking">Confirm Booking</string>
+    <string name="car_selected">Car Selected</string>
+    <string name="tag_line">Car Wash Service</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="add_address">Add Address</string>
+    <string name="add_a_new_car">Add a New Car</string>
+
+
+</resources>

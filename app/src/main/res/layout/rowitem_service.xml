@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.view.View" />
+        <variable
+            name="service"
+            type="com.example.carwash.model.dataAccess.entities.Service" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/serviceLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:apps="http://schemas.android.com/tools"
+    android:paddingTop="10dp">
+
+
+    <RelativeLayout
+        android:id="@+id/item_service_layout"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/item_layout_unselected_background">
+
+        <ImageView
+            android:id="@+id/image_car"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:adjustViewBounds="true"
+            android:alpha="0.50"
+            android:scaleType="center"
+            android:src="@drawable/car_wash_unselected"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/service_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="10dp"
+        android:textSize="18sp"
+        android:text="@{service.name}"
+        app:layout_constraintStart_toEndOf="@+id/item_service_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/service_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:gravity="center|start"
+        android:text="@{service.price}"
+        app:layout_constraintStart_toEndOf="@+id/item_service_layout"
+        app:layout_constraintTop_toBottomOf="@+id/service_name" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
